@@ -26,31 +26,31 @@ Unlike traditional chatbots, this system follows an **agent-based reasoning appr
        width="400"/>
 </p>
 
+## 📁 Project Structure
+
 CRED_RESOLVE/
 │
-├── audios/                         # Telugu audio input samples
-│   ├── a1.mp4
-│   ├── a2.mp4
-│   ├── a3.mp4
-│   ├── a4.mp4
-│   ├── a5.mp4
-│   ├── a6.mp4
-│   └── a7.mp4
+├── audios/ # Telugu audio input samples
+│ ├── a1.mp4
+│ ├── a2.mp4
+│ ├── a3.mp4
+│ ├── a4.mp4
+│ ├── a5.mp4
+│ ├── a6.mp4
+│ └── a7.mp4
 │
-├── audio_converter.py              # Converts audio to required format
-├── SST_Telugu_Gemini.py            # Telugu Speech-to-Text using Gemini
+├── audio_converter.py           # Converts audio to required format
+├── SST_Telugu_Gemini.py         # Telugu Speech-to-Text using Gemini
 │
-├── llm_gemini_tools.py             # LLM + tool integration logic
-├── llm_gemini_tools.ipynb          # Notebook for LLM testing & experiments
+├── llm_gemini_tools.py           # LLM + tool integration logic
+├── llm_gemini_tools.ipynb       # Notebook for LLM testing & experiments
 │
-├── check_models.py                 # Checks available Gemini models
-├── models_list.txt                 # List of supported / tested models
+├── check_models.py         # Checks available Gemini models
+├── models_list.txt         # List of supported / tested Gemini models
 │
-├── failure_mec.ipynb               # Failure mechanism & error handling analysis
+├── failure_mec.ipynb     # Failure mechanism & error handling analysis
 │
-└── voice agent.docx                # Project explanation & voice agent documentation
-
-
+└── voice agent.docx       # Project explanation & voice agent documentation
 
 ---
 
@@ -59,43 +59,42 @@ CRED_RESOLVE/
 Follow the steps below to run the project locally.
 
 ### 1️⃣ Clone the Repository
-
+```
 git clone <your-github-repository-link>
 cd CRED_RESOLVE
+2️⃣ Create a Virtual Environment (Optional but Recommended)
+
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
+3️⃣ Install Dependencies
 
-**2️⃣ Create a Virtual Environment (Optional but Recommended)**
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-
-**3️⃣ Install Dependencies**
 pip install -r requirements.txt
-
-**4️⃣ Configure API Key**
-
+4️⃣ Configure API Key
 Set your Gemini API key as an environment variable or inside the source files:
 
 export GEMINI_API_KEY="your_api_key_here"
-
-**▶️ How to Run the Notebook**
-
+▶️ How to Run the Notebook
 Launch Jupyter Notebook or Jupyter Lab:
-jupyter notebook
 
-Navigate to the notebooks/ directory.
+jupyter notebook
+Navigate to the project directory.
+
 Open the notebook:
 
 failure_mec.ipynb
 Run the notebook cell by cell from top to bottom.
 
 The notebook demonstrates:
+
 Telugu voice input processing
+
 Failure detection and recovery
+
 Conversation memory usage
+
 Successful end-to-end agent responses
 
-**🎧 Audio Usage**
+🎧 Audio Usage
 Pre-recorded Telugu audio clips are used to simulate real user interactions:
 
 Audio File	Scenario Demonstrated
@@ -104,17 +103,24 @@ a2.mp4	Partial user information
 a3.mp4	Memory usage across turns
 a4.mp4	Near-complete information
 a5.mp4	Successful end-to-end flow
+a6.mp4	Additional edge scenario
+a7.mp4	Additional edge scenario
+
 The audio files are processed sequentially to simulate a multi-turn conversation with the agent.
 
-**🗣️ Language Used**
-
+🗣️ Language Used
 Primary Language: Telugu
+
 Telugu is used throughout the complete pipeline:
+
 Voice Input
+
 Speech-to-Text
+
 Agent Reasoning
+
 Tool Interaction
+
 Text-to-Speech Output
 
 No English-based reasoning is used during user interaction.
-
