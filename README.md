@@ -80,7 +80,7 @@ pip install -r requirements.txt
 
 ### 4️⃣ Configure API Key
 ```bash
-export GEMINI_API_KEY="your_api_key_here"
+export GEMINI_API_KEY="your_api_key_here"   #my API Key : AIzaSyBRWST5R3JJee7QH2v1KeYt_BP7wEZ3aac
 ```
 
 ---
