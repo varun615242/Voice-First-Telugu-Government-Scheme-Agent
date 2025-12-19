@@ -1,6 +1,6 @@
-# 🎙️ Voice-First Telugu Government Scheme Agent
+# Voice-First Telugu Government Scheme Agent
 
-## 📌 Project Overview
+## Project Overview
 
 This project presents a **voice-first, agentic AI system** built entirely in **Telugu**, designed to help users identify and understand **government and public welfare schemes** through natural voice interaction.
 
@@ -8,18 +8,18 @@ Unlike traditional chatbots, this system follows an **agent-based reasoning appr
 
 ---
 
-## 🧠 Key Highlights
+## Key Highlights
 
-- 🎤 **Voice-first interaction** with Telugu voice input and output  
-- 🌐 **End-to-end Telugu language pipeline**  
-- 🤖 **Agentic workflow** using Planner–Tool–Evaluator design  
-- 🧰 **Multiple tools** for grounded responses  
-- 🧠 **Conversation memory across turns**  
-- ⚠️ **Failure handling** for incomplete inputs, STT errors, and API quota limits  
+- **Voice-first interaction** with Telugu voice input and output  
+- **End-to-end Telugu language pipeline**  
+- **Agentic workflow** using Planner–Tool–Evaluator design  
+- **Multiple tools** for grounded responses  
+- **Conversation memory across turns**  
+- **Failure handling** for incomplete inputs, STT errors, and API quota limits  
 
 ---
 
-## 🏗️ System Architecture Overview
+## System Architecture Overview
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/158c3996-5e39-4c40-a2ad-051dbdb1986b"
@@ -59,7 +59,7 @@ CRED_RESOLVE/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1️⃣ Clone the Repository
 ```bash
@@ -95,7 +95,7 @@ Open `failure_mec.ipynb` and run all cells from top to bottom.
 
 ---
 
-## 🎧 Audio Usage
+## Audio Usage
 
 | Audio File | Scenario Demonstrated |
 |-----------|----------------------|
@@ -109,7 +109,7 @@ Open `failure_mec.ipynb` and run all cells from top to bottom.
 
 ---
 
-## 🗣️ Language Used
+## Language Used
 
 **Telugu** is used throughout:
 - Voice Input
